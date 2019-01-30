@@ -3,7 +3,6 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-console.log('Adding listener');
   const file = document.querySelector('[type=file]').files;
   const formData = new FormData();
   const markdownContent = document.getElementById('markdownContent');
